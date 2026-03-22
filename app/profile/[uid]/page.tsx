@@ -1,3 +1,4 @@
+export const revalidate = 0;
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { adminDb } from "@/lib/firebase-admin";

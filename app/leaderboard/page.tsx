@@ -1,3 +1,4 @@
+export const revalidate = 0;
 import { adminDb } from "@/lib/firebase-admin";
 import Link from "next/link";
 import { Card, SectionLabel, Avatar } from "@/components/ui";
