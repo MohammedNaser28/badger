@@ -86,6 +86,7 @@ export function Avatar({ name, photoURL, size = 40 }: { name: string; photoURL?:
     </div>
   );
 }
+
 // ─── Terminal Box ─────────────────────────────────────────────────────────────
 export function Terminal({ lines }: { lines: string[] }) {
   return (

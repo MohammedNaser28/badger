@@ -38,6 +38,7 @@ async signIn({ user, account }) {
 
   return true;
 },
+
 async jwt({ token, user, trigger, session }) {
   if (user || trigger === "update") {
     const uid = token.sub!
