@@ -88,7 +88,7 @@ export async function notifyRequestApproved(opts: {
   discordHandle: string;
 }) {
   await sendWebhook({
-    content: `@everyone **${opts.memberName}** **@${opts.discordHandle}** has been awarded **${opts.badgeIcon} ${opts.badgeName}** `,
+    content: ` **${opts.memberName}** **@${opts.discordHandle}** has been awarded **${opts.badgeIcon} ${opts.badgeName}** `,
       allowed_mentions: {
     parse: ["everyone", "roles", "users"],
   },
