@@ -111,6 +111,7 @@ export default async function AdminDashboard() {
             {[
               { href: "/admin/requests?status=pending", label: "Review pending requests", icon: "📋", count: stats.pendingCount },
               { href: "/admin/seasons", label: "Create new season", icon: "📅", count: null },
+              { href: "/admin/members", label: "Manage members & alumni", icon: "👥", count: null },
               { href: "/leaderboard", label: "View leaderboard", icon: "🏆", count: null },
             ].map(item => (
               <Link key={item.href} href={item.href}>

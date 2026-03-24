@@ -20,7 +20,10 @@ export function Navbar() {
   const allItems = [
     ...NAV_ITEMS,
 ...(session?.user?.uid ? [{ href: `/profile/${session.user.uid}`, label: "~/profile" }] : []),
-    ...(isAdmin ? [{ href: "/admin", label: "~/admin", admin: true }] : []),
+    ...(isAdmin ? [
+  { href: "/admin", label: "~/admin", admin: true },
+  { href: "/admin/members", label: "~/members", admin: true },
+] : []),
   ];
 
   return (

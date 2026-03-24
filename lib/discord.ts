@@ -147,7 +147,7 @@ export async function notifyCongratulations(opts: {
 }) {
   await sendWebhookCongratulation({
 
-    content: `:tada:Congratulations ${opts.memberName} You've earned the **${opts.badgeName}** :trophy: +${opts.badgePoints} pts Keep up the good work!`,
+    content: `:tada:Congratulations **${opts.memberName}** You've earned the **${opts.badgeName}** :trophy: **+${opts.badgePoints}** pts Keep up the good work!  @Linux @everyone`,
       allowed_mentions: {
     parse: ["everyone", "roles", "users"],
   },
